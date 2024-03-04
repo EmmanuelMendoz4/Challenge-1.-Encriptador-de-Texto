@@ -1,0 +1,222 @@
+body {
+    font-family: "Roboto Mono", monospace;
+}
+
+header {
+    background: #111111;
+    background-size: auto;
+    background-position: 20%;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+}
+
+.logo-encriptador{
+    width: 50vh;
+    max-width: 50px;
+    filter: invert(100%) sepia(13%) saturate(1%) hue-rotate(302deg) brightness(107%) contrast(101%);
+}
+
+.titulo-principal {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 5px;
+    padding: 1em;
+    color: #FFFFFF;
+}
+
+.logo-alura{
+    width: auto;
+    height: 50px;
+    filter: invert(100%) sepia(13%) saturate(1%) hue-rotate(302deg) brightness(107%) contrast(101%);
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.logo-alura:hover {
+    filter: none;
+}
+
+.principal {
+    padding: 2em;
+    background-color:   #192b30;
+    background-size: auto 10%;
+    background-position: center;
+    margin: 0 auto;
+    text-align: center;
+    background-size: cover;
+}
+
+.campo {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.campo-texto, .campo-traduccion {
+    width: 100%;
+    min-height: 10%;
+    margin: 10px auto;
+    background-color: #111111;
+    background-image: url(Material/background.gif);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    transition: 0.5s;
+    color:#FFFFFF;
+    resize: none;
+    border-radius: 10px; 
+}
+
+.campo-texto:hover, .campo-traduccion:hover {
+    border-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.aviso::before {
+    content: "\26A0";
+    margin-right: 5px;
+}
+
+.tooltip-container {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 6%;
+    transform: translateX(-50%);
+}
+
+.tooltip-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #192b30;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 20em;
+    background-color: #192b30;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px);
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.boton {
+    margin-top: 30px;
+}
+.boton button{
+    border-radius: 10px;
+    background-color: #333333;
+    color: #FFFFFF;
+    vertical-align: middle;
+    border-radius: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    margin: .5%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton button:hover{
+    background-color: #005F6B;
+    transform: scale(1.1);
+    animation: pulse 2s infinite;
+}
+
+footer {
+    text-align: center;
+    background: #111111;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.redes-sociales{
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociales ul li{
+    display: inline-block;
+    margin: 20px 5px;
+}
+
+.redes-sociales ul li a {
+    display: block;
+    padding: 0 10px;
+    color: #CCCCCC;
+    transition: .2s;
+    font-size: 30px;
+}
+
+.redes-sociales ul li:hover a{
+    color: #005F6B;
+}
+
+.copyright {
+    color: #CCCCCC;
+    font-size: 80%;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+  /* Estilos específicos para dispositivos móviles */
+  .cabecera {
+    flex-direction: column;
+  }
+
+  .logo-encriptador {
+    width: 100px; /* Ajusta el tamaño del logo */
+  }
+
+  .titulo-principal {
+    font-size: 16px; /* Ajusta el tamaño del título */
+  }
+
+  .campo {
+    flex-direction: column; /* Coloca los campos uno encima del otro */
+  }
+
+  .campo-texto, .campo-traduccion {
+    width: 90%; /* Ajusta el ancho de los campos de texto */
+  }
+
+  .boton {
+    flex-direction: column; /* Coloca los botones uno encima del otro */
+  }
+
+  .boton button {
+    width: 100%; /* Ajusta el ancho de los botones */
+  }
+}

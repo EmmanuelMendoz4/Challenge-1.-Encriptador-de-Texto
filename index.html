@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto 🤑</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <h1><img class="logo-encriptador" src="Icons/Logo-Encriptador.png" alt="logo-encriptador" onclick="botonSecreto()"></h1>
+            <h2 class="titulo-principal">Encriptador/Desencriptador</h2>
+        </div>
+        <a href="https://app.aluracursos.com/user/emmanuelmendoz4"><img src="Icons/Logo-alura.png" class="logo-alura" alt="Logo de Alura"></a>
+    </header>
+
+    <main>
+        <section class="principal">
+
+            <div class="campo">
+                <textarea cols="30" rows="40" id="texto-encriptado" class="campo-texto" placeholder="Introduce tu mensaje para encriptar o desencriptar..."></textarea>
+                <div class="tooltip-container">
+                    <div class="tooltip-icon"><i class="fas fa-info-circle"></i></div>
+                    <span class="tooltip-text">No uses mayúsculas, números, acentos ni caracteres especiales.</span>
+                </div>
+                <textarea cols="20" rows="30" id="texto-desencriptado" class="campo-traduccion" placeholder="Tu mensaje deencriptado o encriptado aparecerá aquí" readonly></textarea>
+            </div>
+
+            <div class="boton">
+                <button class="botonEncriptar" onclick="botonEncriptar()"><i class="fas fa-lock"></i> Encriptar mensaje</button>
+                <button class="botonDesencriptar" onclick="botonDesencriptar()"><i class="fas fa-unlock"></i> Desencriptar mensaje</button>
+                <button class="botonCopiar" onclick="botonCopiar()"><i class="fas fa-clone"></i> Copiar</button>
+                <button class="botonBorrar" onclick="botonBorrar()"><i class="fas fa-trash"></i> Borrar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; Copyright EmmanuelMendoz4 - 2024</p>
+        <p class="copyright">Challenge 1. Encriptador de Texto</p>
+    
+        <div class="redes-sociales">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/emmanuel-mendoza-5aa608272/" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/EmmanuelMendoz4" class="github" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
