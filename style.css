@@ -84,51 +84,6 @@ header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.aviso::before {
-    content: "\26A0";
-    margin-right: 5px;
-}
-
-.tooltip-container {
-    position: absolute;
-    top: calc(100% + 5px);
-    left: 6%;
-    transform: translateX(-50%);
-}
-
-.tooltip-icon {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    background-color: #192b30;
-    color: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.tooltip-text {
-    visibility: hidden;
-    width: 20em;
-    background-color: #192b30;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    left: calc(100% + 10px);
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.tooltip-container:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-}
-
 .boton {
     margin-top: 30px;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de Texto 🤑</title>
+    <title>Encriptador de Texto | by EmmanuelMendoz4</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,19 +25,16 @@
 
             <div class="campo">
                 <textarea cols="30" rows="40" id="texto-encriptado" class="campo-texto" placeholder="Introduce tu mensaje para encriptar o desencriptar..."></textarea>
-                <div class="tooltip-container">
-                    <div class="tooltip-icon"><i class="fas fa-info-circle"></i></div>
-                    <span class="tooltip-text">No uses mayúsculas, números, acentos ni caracteres especiales.</span>
+                <div class="boton">
+                    <button class="botonEncriptar" onclick="botonEncriptar()"><i class="fas fa-lock"></i> Encriptar mensaje</button>
+                    <button class="botonDesencriptar" onclick="botonDesencriptar()"><i class="fas fa-unlock"></i> Desencriptar mensaje</button>
+                    <button class="botonCopiar" onclick="botonCopiar()"><i class="fas fa-clone"></i> Copiar</button>
+                    <button class="botonBorrar" onclick="botonBorrar()"><i class="fas fa-trash"></i> Borrar</button>
                 </div>
-                <textarea cols="20" rows="30" id="texto-desencriptado" class="campo-traduccion" placeholder="Tu mensaje deencriptado o encriptado aparecerá aquí" readonly></textarea>
+                <textarea cols="30" rows="40" id="texto-desencriptado" class="campo-traduccion" placeholder="Tu mensaje deencriptado o encriptado aparecerá aquí" readonly></textarea>
             </div>
 
-            <div class="boton">
-                <button class="botonEncriptar" onclick="botonEncriptar()"><i class="fas fa-lock"></i> Encriptar mensaje</button>
-                <button class="botonDesencriptar" onclick="botonDesencriptar()"><i class="fas fa-unlock"></i> Desencriptar mensaje</button>
-                <button class="botonCopiar" onclick="botonCopiar()"><i class="fas fa-clone"></i> Copiar</button>
-                <button class="botonBorrar" onclick="botonBorrar()"><i class="fas fa-trash"></i> Borrar</button>
-            </div>
+            
         </section>
     </main>
 
